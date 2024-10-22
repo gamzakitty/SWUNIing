@@ -1,0 +1,15 @@
+# Set the default behavior, in case people don't have core.autocrlf set.
+* text=auto
+
+# Explicitly declare text files you want to always be normalized and converted
+*.cs text
+*.shader text
+*.txt text
+
+# Binary files that should be excluded from any line-ending normalization
+*.png binary
+*.jpg binary
+*.unity binary
+*.prefab binary
+*.fbx binary
+*.dll binary
