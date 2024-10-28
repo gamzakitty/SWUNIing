@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\bsy\\unitywork\\SWUNIing\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F5A98DDE-EEA0-EF9D-FE89-8B94AC03C1E6}|Assembly-CSharp.csproj|c:\\users\\bsy\\unitywork\\swuniing\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5A98DDE-EEA0-EF9D-FE89-8B94AC03C1E6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F5A98DDE-EEA0-EF9D-FE89-8B94AC03C1E6}|Assembly-CSharp.csproj|c:\\users\\bsy\\unitywork\\swuniing\\assets\\scripts\\hall50thmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5A98DDE-EEA0-EF9D-FE89-8B94AC03C1E6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\hall50thmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5A98DDE-EEA0-EF9D-FE89-8B94AC03C1E6}|Assembly-CSharp.csproj|C:\\Users\\bsy\\unitywork\\SWUNIing\\assets\\scripts\\hall50thdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5A98DDE-EEA0-EF9D-FE89-8B94AC03C1E6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\hall50thdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "GameManager.cs",
-              "DocumentMoniker": "C:\\Users\\bsy\\unitywork\\SWUNIing\\Assets\\Scripts\\GameManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
-              "ToolTip": "C:\\Users\\bsy\\unitywork\\SWUNIing\\Assets\\Scripts\\GameManager.cs*",
-              "RelativeToolTip": "Assets\\Scripts\\GameManager.cs*",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAAwDkAAAAmAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Hall50thData.cs",
+              "DocumentMoniker": "C:\\Users\\bsy\\unitywork\\SWUNIing\\Assets\\Scripts\\Hall50thData.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Hall50thData.cs",
+              "ToolTip": "C:\\Users\\bsy\\unitywork\\SWUNIing\\Assets\\Scripts\\Hall50thData.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Hall50thData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T13:41:52.512Z",
+              "WhenOpened": "2024-10-28T13:07:23.617Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Hall50thManager.cs",
+              "DocumentMoniker": "C:\\Users\\bsy\\unitywork\\SWUNIing\\Assets\\Scripts\\Hall50thManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Hall50thManager.cs",
+              "ToolTip": "C:\\Users\\bsy\\unitywork\\SWUNIing\\Assets\\Scripts\\Hall50thManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Hall50thManager.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAYwGAAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T12:11:07.373Z",
               "EditorCaption": ""
             }
           ]
