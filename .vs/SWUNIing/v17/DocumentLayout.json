@@ -3,12 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\bsy\\unitywork\\SWUNIing\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F5A98DDE-EEA0-EF9D-FE89-8B94AC03C1E6}|Assembly-CSharp.csproj|c:\\users\\bsy\\unitywork\\swuniing\\assets\\scripts\\hall50thmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F5A98DDE-EEA0-EF9D-FE89-8B94AC03C1E6}|Assembly-CSharp.csproj|c:\\users\\bsy\\unitywork\\swuniing\\assets\\scripts\\messagemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5A98DDE-EEA0-EF9D-FE89-8B94AC03C1E6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\messagemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5A98DDE-EEA0-EF9D-FE89-8B94AC03C1E6}|Assembly-CSharp.csproj|c:\\users\\bsy\\unitywork\\swuniing\\assets\\scripts\\messagelistitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5A98DDE-EEA0-EF9D-FE89-8B94AC03C1E6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\messagelistitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5A98DDE-EEA0-EF9D-FE89-8B94AC03C1E6}|Assembly-CSharp.csproj|C:\\Users\\bsy\\unitywork\\SWUNIing\\assets\\scripts\\menumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5A98DDE-EEA0-EF9D-FE89-8B94AC03C1E6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\menumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5A98DDE-EEA0-EF9D-FE89-8B94AC03C1E6}|Assembly-CSharp.csproj|C:\\Users\\bsy\\unitywork\\SWUNIing\\assets\\scripts\\hall50thmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F5A98DDE-EEA0-EF9D-FE89-8B94AC03C1E6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\hall50thmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F5A98DDE-EEA0-EF9D-FE89-8B94AC03C1E6}|Assembly-CSharp.csproj|C:\\Users\\bsy\\unitywork\\SWUNIing\\assets\\scripts\\hall50thdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F5A98DDE-EEA0-EF9D-FE89-8B94AC03C1E6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\hall50thdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\bsy\\unitywork\\SWUNIing\\Assets\\Scripts\\MessageData.json||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\MessageData.json||{3B902123-F8A7-4915-9F01-361F908088D0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,6 +39,58 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "MessageListItem.cs",
+              "DocumentMoniker": "C:\\Users\\bsy\\unitywork\\SWUNIing\\Assets\\Scripts\\MessageListItem.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\MessageListItem.cs",
+              "ToolTip": "C:\\Users\\bsy\\unitywork\\SWUNIing\\Assets\\Scripts\\MessageListItem.cs",
+              "RelativeToolTip": "Assets\\Scripts\\MessageListItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T15:09:52.386Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MessageManager.cs",
+              "DocumentMoniker": "C:\\Users\\bsy\\unitywork\\SWUNIing\\Assets\\Scripts\\MessageManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\MessageManager.cs",
+              "ToolTip": "C:\\Users\\bsy\\unitywork\\SWUNIing\\Assets\\Scripts\\MessageManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\MessageManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T14:36:05.169Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MessageData.json",
+              "DocumentMoniker": "C:\\Users\\bsy\\unitywork\\SWUNIing\\Assets\\Scripts\\MessageData.json",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\MessageData.json",
+              "ToolTip": "C:\\Users\\bsy\\unitywork\\SWUNIing\\Assets\\Scripts\\MessageData.json",
+              "RelativeToolTip": "Assets\\Scripts\\MessageData.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-04T13:53:20.226Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MenuManager.cs",
+              "DocumentMoniker": "C:\\Users\\bsy\\unitywork\\SWUNIing\\Assets\\Scripts\\MenuManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\MenuManager.cs",
+              "ToolTip": "C:\\Users\\bsy\\unitywork\\SWUNIing\\Assets\\Scripts\\MenuManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\MenuManager.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAzwDUAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T09:26:05.282Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Hall50thData.cs",
               "DocumentMoniker": "C:\\Users\\bsy\\unitywork\\SWUNIing\\Assets\\Scripts\\Hall50thData.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Hall50thData.cs",
@@ -30,21 +98,19 @@
               "RelativeToolTip": "Assets\\Scripts\\Hall50thData.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T13:07:23.617Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-28T13:07:23.617Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Hall50thManager.cs",
               "DocumentMoniker": "C:\\Users\\bsy\\unitywork\\SWUNIing\\Assets\\Scripts\\Hall50thManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Hall50thManager.cs",
               "ToolTip": "C:\\Users\\bsy\\unitywork\\SWUNIing\\Assets\\Scripts\\Hall50thManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\Hall50thManager.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAQwGAAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAUwAkAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T12:11:07.373Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-28T12:11:07.373Z"
             }
           ]
         }
