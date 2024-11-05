@@ -1,12 +1,14 @@
+using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using System;
 
 public class Hall50thManager : MonoBehaviour
 {
 	public List<Hall50thData> events;                // 현재 스테이지의 대화 및 이벤트 리스트
+	
 	public TextMeshProUGUI characterNameText;        // 캐릭터 이름을 표시할 UI 텍스트 (TextMeshPro)
 	public TextMeshProUGUI contentText;              // 대화나 문제 내용을 표시할 UI 텍스트 (TextMeshPro)
 	public TextMeshProUGUI titleText;                // 팝업의 제목 텍스트
@@ -17,7 +19,15 @@ public class Hall50thManager : MonoBehaviour
 	public Image quizImage;                          // 퀴즈 화면에서의 이미지
 	public Image popupImage;                         // 팝업에서의 이미지
 	public Button checkButton;                       // 퀴즈 확인 버튼
-	public Button okButton;                          // 팝업에서의 OK 버튼
+	public Button okButton;                          // 팝업에서의 확인 버튼
+	public Button cancelButton;                      // 팝업에서의 취소 버튼
+
+	//public GameObject messageWindow;                // 메시지 창 오브젝트
+	//public GameObject messageCardPrefab;            // 메시지 카드 프리팹
+	//public Transform messageContentParent;          // 메시지 카드가 추가될 부모 객체
+	//public TMP_InputField responseInputField;       // 플레이어의 입력 필드
+	//public Button responseButton;                   // 입력 확인 버튼
+	//private string characterNameHeader;
 
 	private int currentEventIndex = 0;               // 현재 대화 또는 이벤트 인덱스
 
@@ -44,7 +54,7 @@ public class Hall50thManager : MonoBehaviour
 	}
 
 	// 이벤트 표시
-	private void ShowEvent(int eventIndex)
+	public void ShowEvent(int eventIndex)
 	{
 		Hall50thData eventData = events[eventIndex]; // Hall50thData 사용
 
@@ -61,7 +71,7 @@ public class Hall50thManager : MonoBehaviour
 			case EventType.Quiz:
 				ShowQuiz(eventData);
 				break;
-
+			
 				// 필요한 경우 다른 이벤트 유형 추가 가능
 		}
 	}
@@ -128,19 +138,16 @@ public class Hall50thManager : MonoBehaviour
 	// 퀴즈 팝업 표시
 	private void ShowQuizPopup(Hall50thData eventData)
 	{
-		quizPanel.SetActive(true);                  // 팝업 활성화
-		titleText.text = "정답 입력";               // 팝업 제목 설정
+		quizPanel.SetActive(true);                    // 팝업 활성화
 
 		// 팝업에 표시할 텍스트 설정
-		popupContentText.text = !string.IsNullOrEmpty(eventData.popupContent)
-			? eventData.popupContent                // Quiz 이벤트의 팝업 내용 사용
-			: GetLastSentence(eventData.content);   // content의 마지막 문장 사용
+		popupContentText.text = eventData.popupContent; // Quiz 이벤트의 팝업 내용 사용
 
-		popupImage.sprite = eventData.eventImage;   // 팝업 이미지 설정
+		popupImage.sprite = eventData.eventImage;      // 팝업 이미지 설정
 		popupImage.enabled = eventData.eventImage != null;
-		answerInputField.text = "";                 // 입력 초기화
-		okButton.gameObject.SetActive(true);        // OK 버튼 활성화
-		okButton.GetComponentInChildren<TextMeshProUGUI>().text = "OK"; // OK 버튼 텍스트 설정
+		answerInputField.text = "";                    // 입력 초기화
+		okButton.gameObject.SetActive(true);           // OK 버튼 활성화
+		cancelButton.gameObject.SetActive(true);       // Cancel 버튼 활성화
 
 		// OK 버튼 클릭 시 정답 확인
 		okButton.onClick.RemoveAllListeners();
@@ -151,15 +158,23 @@ public class Hall50thManager : MonoBehaviour
 			// 정답 확인
 			if (answer.Equals(eventData.correctAnswer, System.StringComparison.OrdinalIgnoreCase))
 			{
-				quizPanel.SetActive(false);         // 팝업 비활성화
-				MoveToNextEvent();                  // 다음 이벤트로 이동
+				quizPanel.SetActive(false);           // 팝업 비활성화
+				MoveToNextEvent();                    // 다음 이벤트로 이동
 			}
 			else
 			{
-				answerInputField.text = "";         // 오답인 경우 입력 필드 초기화
+				answerInputField.text = "";           // 오답인 경우 입력 필드 초기화
 			}
 		});
+
+		// Cancel 버튼 클릭 시 팝업 비활성화
+		cancelButton.onClick.RemoveAllListeners();
+		cancelButton.onClick.AddListener(() =>
+		{
+			quizPanel.SetActive(false);               // 팝업 비활성화
+		});
 	}
+
 
 	// 텍스트 크기에 맞춰 RectTransform 조정
 	private void AdjustTextSize()
@@ -201,4 +216,11 @@ public class Hall50thManager : MonoBehaviour
 		var sentences = content.Split(new[] { '.', '!', '?' }, StringSplitOptions.RemoveEmptyEntries);
 		return sentences.Length > 0 ? sentences[^1].Trim() : content;
 	}
+
+	// 현재 이벤트 id 반환
+	public Hall50thData GetCurrentEventData()
+	{
+		return events[currentEventIndex];
+	}
+
 }

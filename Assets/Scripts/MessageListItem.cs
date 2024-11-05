@@ -5,6 +5,7 @@ using UnityEngine.EventSystems;
 public class MessageListItem : MonoBehaviour, IPointerClickHandler
 {
 	public TextMeshProUGUI characterNameTMP; // 캐릭터 이름이 적힌 TMP
+	public TextMeshProUGUI contentTMP;		 // 마지막 대화 내용 (임시 데이터)
 	private MessageManager messageManager;
 
 	private void Start()
@@ -19,7 +20,7 @@ public class MessageListItem : MonoBehaviour, IPointerClickHandler
 		if (messageManager != null)
 		{
 			// 캐릭터 이름을 MessageManager에 전달하여 1대1 메시지 창을 엽니다.
-			messageManager.OpenMessageWindow(characterNameTMP.text);
+			messageManager.OpenMessageWindow(characterNameTMP.text, contentTMP.text);
 		}
 	}
 }
