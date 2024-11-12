@@ -12,3 +12,4 @@
 *.fbx binary
 *.dll binary
 Assets/Editor/Migration/com.ptc.vuforia.engine-10.27.3.tgz filter=lfs diff=lfs merge=lfs -text
+Packages/com.ptc.vuforia.engine-10.27.3.tgz filter=lfs diff=lfs merge=lfs -text
