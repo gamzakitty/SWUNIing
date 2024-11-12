@@ -1,11 +1,9 @@
 # Set the default behavior, in case people don't have core.autocrlf set.
 * text=auto
-
 # Explicitly declare text files you want to always be normalized and converted
 *.cs text
 *.shader text
 *.txt text
-
 # Binary files that should be excluded from any line-ending normalization
 *.png binary
 *.jpg binary
@@ -13,3 +11,4 @@
 *.prefab binary
 *.fbx binary
 *.dll binary
+Assets/Editor/Migration/com.ptc.vuforia.engine-10.27.3.tgz filter=lfs diff=lfs merge=lfs -text
