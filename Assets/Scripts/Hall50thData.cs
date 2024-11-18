@@ -23,13 +23,16 @@ public class Hall50thData
 
 	[Header("Quiz 이벤트 전용")]
 	[Tooltip("Quiz 이벤트일 경우 표시할 팝업 내용")]
-	public string popupContent;                  // 팝업 콘텐츠 (Quiz 전용)
+	public string quizPopupContent;              // 팝업 콘텐츠 (Quiz 전용)
 
 	[Tooltip("Quiz 이벤트일 경우 입력할 정답")]
 	public string correctAnswer;                 // 퀴즈 정답 (Quiz 전용)
 
 	[Tooltip("퀴즈에 대한 힌트 (있을 경우)")]
-	public string hintText;						 // 이벤트에 대한 힌트
+	public string hintText;                      // 이벤트에 대한 힌트
+
+	[Header("AR 이벤트 전용")]
+	public string ARPopupContent;                // 팝업 콘텐츠 (AR 전용)
 
 	//[Header("Message 이벤트 전용")]
 	//public List<string> messageSequence = new(); // 메시지 순서

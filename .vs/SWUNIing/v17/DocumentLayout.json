@@ -3,24 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\bsy\\unitywork\\SWUNIing\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F5A98DDE-EEA0-EF9D-FE89-8B94AC03C1E6}|Assembly-CSharp.csproj|c:\\users\\bsy\\unitywork\\swuniing\\assets\\scripts\\inventorymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F5A98DDE-EEA0-EF9D-FE89-8B94AC03C1E6}|Assembly-CSharp.csproj|c:\\users\\bsy\\unitywork\\swuniing\\assets\\scripts\\hall50thmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5A98DDE-EEA0-EF9D-FE89-8B94AC03C1E6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\hall50thmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5A98DDE-EEA0-EF9D-FE89-8B94AC03C1E6}|Assembly-CSharp.csproj|C:\\Users\\bsy\\unitywork\\SWUNIing\\assets\\scripts\\vuforiafovfix.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5A98DDE-EEA0-EF9D-FE89-8B94AC03C1E6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\vuforiafovfix.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5A98DDE-EEA0-EF9D-FE89-8B94AC03C1E6}|Assembly-CSharp.csproj|C:\\Users\\bsy\\unitywork\\SWUNIing\\assets\\scripts\\arcamerascaler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5A98DDE-EEA0-EF9D-FE89-8B94AC03C1E6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\arcamerascaler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5A98DDE-EEA0-EF9D-FE89-8B94AC03C1E6}|Assembly-CSharp.csproj|C:\\Users\\bsy\\unitywork\\SWUNIing\\assets\\scripts\\audiolistenermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5A98DDE-EEA0-EF9D-FE89-8B94AC03C1E6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\audiolistenermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5A98DDE-EEA0-EF9D-FE89-8B94AC03C1E6}|Assembly-CSharp.csproj|C:\\Users\\bsy\\unitywork\\SWUNIing\\assets\\scripts\\hall50thdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5A98DDE-EEA0-EF9D-FE89-8B94AC03C1E6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\hall50thdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5A98DDE-EEA0-EF9D-FE89-8B94AC03C1E6}|Assembly-CSharp.csproj|C:\\Users\\bsy\\unitywork\\SWUNIing\\assets\\scripts\\inventorymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F5A98DDE-EEA0-EF9D-FE89-8B94AC03C1E6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\inventorymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F5A98DDE-EEA0-EF9D-FE89-8B94AC03C1E6}|Assembly-CSharp.csproj|c:\\users\\bsy\\unitywork\\swuniing\\assets\\scripts\\messagemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F5A98DDE-EEA0-EF9D-FE89-8B94AC03C1E6}|Assembly-CSharp.csproj|C:\\Users\\bsy\\unitywork\\SWUNIing\\assets\\scripts\\messagemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F5A98DDE-EEA0-EF9D-FE89-8B94AC03C1E6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\messagemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F5A98DDE-EEA0-EF9D-FE89-8B94AC03C1E6}|Assembly-CSharp.csproj|C:\\Users\\bsy\\unitywork\\SWUNIing\\assets\\scripts\\messagelistitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F5A98DDE-EEA0-EF9D-FE89-8B94AC03C1E6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\messagelistitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F5A98DDE-EEA0-EF9D-FE89-8B94AC03C1E6}|Assembly-CSharp.csproj|C:\\Users\\bsy\\unitywork\\SWUNIing\\assets\\scripts\\hall50thmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5A98DDE-EEA0-EF9D-FE89-8B94AC03C1E6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\hall50thmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F5A98DDE-EEA0-EF9D-FE89-8B94AC03C1E6}|Assembly-CSharp.csproj|C:\\Users\\bsy\\unitywork\\SWUNIing\\assets\\scripts\\hall50thdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5A98DDE-EEA0-EF9D-FE89-8B94AC03C1E6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\hall50thdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F5A98DDE-EEA0-EF9D-FE89-8B94AC03C1E6}|Assembly-CSharp.csproj|C:\\Users\\bsy\\unitywork\\SWUNIing\\assets\\scripts\\hintmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -42,11 +54,35 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "VuforiaFOVFix.cs",
+              "DocumentMoniker": "C:\\Users\\bsy\\unitywork\\SWUNIing\\Assets\\Scripts\\VuforiaFOVFix.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\VuforiaFOVFix.cs",
+              "ToolTip": "C:\\Users\\bsy\\unitywork\\SWUNIing\\Assets\\Scripts\\VuforiaFOVFix.cs",
+              "RelativeToolTip": "Assets\\Scripts\\VuforiaFOVFix.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T08:51:10.679Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ARCameraScaler.cs",
+              "DocumentMoniker": "C:\\Users\\bsy\\unitywork\\SWUNIing\\Assets\\Scripts\\ARCameraScaler.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ARCameraScaler.cs",
+              "ToolTip": "C:\\Users\\bsy\\unitywork\\SWUNIing\\Assets\\Scripts\\ARCameraScaler.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ARCameraScaler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T08:49:54.441Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "InventoryManager.cs",
               "DocumentMoniker": "C:\\Users\\bsy\\unitywork\\SWUNIing\\Assets\\Scripts\\InventoryManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\InventoryManager.cs",
@@ -54,12 +90,11 @@
               "RelativeToolTip": "Assets\\Scripts\\InventoryManager.cs",
               "ViewState": "AgIAABwAAAAAAAAAAAAAwDQAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T15:01:22.769Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-12T15:01:22.769Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "HintManager.cs",
               "DocumentMoniker": "C:\\Users\\bsy\\unitywork\\SWUNIing\\Assets\\Scripts\\HintManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\HintManager.cs",
@@ -71,31 +106,44 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Hall50thManager.cs",
+              "DocumentMoniker": "C:\\Users\\bsy\\unitywork\\SWUNIing\\Assets\\Scripts\\Hall50thManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Hall50thManager.cs",
+              "ToolTip": "C:\\Users\\bsy\\unitywork\\SWUNIing\\Assets\\Scripts\\Hall50thManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Hall50thManager.cs",
+              "ViewState": "AgIAABYBAAAAAAAAAAAqwCQBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T12:11:07.373Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AudioListenerManager.cs",
+              "DocumentMoniker": "C:\\Users\\bsy\\unitywork\\SWUNIing\\Assets\\Scripts\\AudioListenerManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\AudioListenerManager.cs",
+              "ToolTip": "C:\\Users\\bsy\\unitywork\\SWUNIing\\Assets\\Scripts\\AudioListenerManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\AudioListenerManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T08:23:09.455Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 4,
               "Title": "Hall50thData.cs",
               "DocumentMoniker": "C:\\Users\\bsy\\unitywork\\SWUNIing\\Assets\\Scripts\\Hall50thData.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Hall50thData.cs",
               "ToolTip": "C:\\Users\\bsy\\unitywork\\SWUNIing\\Assets\\Scripts\\Hall50thData.cs",
               "RelativeToolTip": "Assets\\Scripts\\Hall50thData.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAABQAAAAAAAAAAADwvzEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-28T13:07:23.617Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Hall50thManager.cs",
-              "DocumentMoniker": "C:\\Users\\bsy\\unitywork\\SWUNIing\\Assets\\Scripts\\Hall50thManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Hall50thManager.cs",
-              "ToolTip": "C:\\Users\\bsy\\unitywork\\SWUNIing\\Assets\\Scripts\\Hall50thManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Hall50thManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T12:11:07.373Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "MessageListItem.cs",
               "DocumentMoniker": "C:\\Users\\bsy\\unitywork\\SWUNIing\\Assets\\Scripts\\MessageListItem.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MessageListItem.cs",
@@ -107,7 +155,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "MessageManager.cs",
               "DocumentMoniker": "C:\\Users\\bsy\\unitywork\\SWUNIing\\Assets\\Scripts\\MessageManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MessageManager.cs",
@@ -115,12 +163,11 @@
               "RelativeToolTip": "Assets\\Scripts\\MessageManager.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T14:36:05.169Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-04T14:36:05.169Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "MenuManager.cs",
               "DocumentMoniker": "C:\\Users\\bsy\\unitywork\\SWUNIing\\Assets\\Scripts\\MenuManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MenuManager.cs",
@@ -132,7 +179,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "ImmeData.json",
               "DocumentMoniker": "C:\\Users\\bsy\\unitywork\\SWUNIing\\Assets\\Scripts\\ImmeData.json",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ImmeData.json",
@@ -140,7 +187,8 @@
               "RelativeToolTip": "Assets\\Scripts\\ImmeData.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-05T14:38:44.92Z"
+              "WhenOpened": "2024-11-05T14:38:44.92Z",
+              "EditorCaption": ""
             }
           ]
         }

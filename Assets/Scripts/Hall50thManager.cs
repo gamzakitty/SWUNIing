@@ -12,7 +12,7 @@ public class Hall50thManager : MonoBehaviour
 	public TextMeshProUGUI characterNameText;        // 캐릭터 이름을 표시할 UI 텍스트 (TextMeshPro)
 	public TextMeshProUGUI contentText;              // 대화나 문제 내용을 표시할 UI 텍스트 (TextMeshPro)
 	public TextMeshProUGUI titleText;                // 팝업의 제목 텍스트
-	public TextMeshProUGUI popupContentText;         // 팝업의 내용 텍스트
+	public TextMeshProUGUI quizPopupContentText;     // 퀴즈 팝업의 내용 텍스트
 	public Button[] choiceButtons;                   // 선택지 버튼 배열
 	public TMP_InputField answerInputField;          // 퀴즈 정답 입력 필드 (TextMeshPro)
 	public GameObject quizPanel;                     // 퀴즈 팝업 패널
@@ -21,6 +21,11 @@ public class Hall50thManager : MonoBehaviour
 	public Button checkButton;                       // 퀴즈 확인 버튼
 	public Button okButton;                          // 팝업에서의 확인 버튼
 	public Button cancelButton;                      // 팝업에서의 취소 버튼
+	public GameObject ARCameraPanel;                 // AR 카메라 패널
+	public GameObject ARCamera;                      // AR 카메라 (Vuforia AR 카메라)
+	public Button ARCancelButton;                    // AR 패널의 취소 버튼
+	public TextMeshProUGUI ARPopupContentText;       // AR 팝업의 내용 텍스트
+	public GameObject marker;					     // 이미지 인식 시 표시할 표식 (GameObject)
 
 	//public GameObject messageWindow;                // 메시지 창 오브젝트
 	//public GameObject messageCardPrefab;            // 메시지 카드 프리팹
@@ -38,6 +43,9 @@ public class Hall50thManager : MonoBehaviour
 		popupImage.enabled = false;                  // 팝업 이미지 비활성화
 		quizPanel.SetActive(false);                  // 퀴즈 팝업 비활성화
 		quizImage.enabled = false;                   // 퀴즈 이미지 비활성화
+		ARCameraPanel.SetActive(false);              // AR 패널 비활성화
+		ARCamera?.SetActive(false);                  // AR 카메라 비활성화
+		marker.SetActive(false);					 // 표식 비활성화
 		StartDialogue();                             // 대화 시작
 
 		// 텍스트 왼쪽 정렬
@@ -71,7 +79,11 @@ public class Hall50thManager : MonoBehaviour
 			case EventType.Quiz:
 				ShowQuiz(eventData);
 				break;
-			
+
+			case EventType.AR:
+				ShowAR(eventData);
+				break;
+
 				// 필요한 경우 다른 이벤트 유형 추가 가능
 		}
 	}
@@ -141,7 +153,7 @@ public class Hall50thManager : MonoBehaviour
 		quizPanel.SetActive(true);                    // 팝업 활성화
 
 		// 팝업에 표시할 텍스트 설정
-		popupContentText.text = eventData.popupContent; // Quiz 이벤트의 팝업 내용 사용
+		quizPopupContentText.text = eventData.quizPopupContent; // Quiz 이벤트의 팝업 내용 사용
 
 		popupImage.sprite = eventData.eventImage;      // 팝업 이미지 설정
 		popupImage.enabled = eventData.eventImage != null;
@@ -175,12 +187,80 @@ public class Hall50thManager : MonoBehaviour
 		});
 	}
 
+	private void ShowAR(Hall50thData eventData)
+	{
+		contentText.text = eventData.content;          // 본문 텍스트 설정
+		checkButton.gameObject.SetActive(true);        // 확인 버튼 활성화
+		checkButton.GetComponentInChildren<TextMeshProUGUI>().text = "AR"; // 버튼 텍스트 설정
+
+		// 팝업에 표시할 텍스트 설정
+		ARPopupContentText.text = eventData.ARPopupContent; // AR 이벤트의 팝업 내용 사용
+
+		// 선택지 버튼 비활성화
+		foreach (Button button in choiceButtons)
+		{
+			button.gameObject.SetActive(false);
+		}
+
+		checkButton.onClick.RemoveAllListeners();
+		checkButton.onClick.AddListener(() =>
+		{
+			ARCameraPanel.SetActive(true);            // AR 패널 활성화
+			if (ARCamera != null)
+				ARCamera.SetActive(true);            // AR 카메라 활성화
+		});
+
+		ARCancelButton.onClick.RemoveAllListeners();
+		ARCancelButton.onClick.AddListener(() =>
+		{
+			ARCameraPanel.SetActive(false);           // AR 패널 비활성화
+			if (ARCamera != null)
+				ARCamera.SetActive(false);           // AR 카메라 비활성화
+		});
+		
+		var observerEventHandler = ARCamera.GetComponentInChildren<DefaultObserverEventHandler>();
+		if (observerEventHandler != null)
+		{
+			observerEventHandler.OnTargetFound.AddListener(OnTargetFound);
+			observerEventHandler.OnTargetLost.AddListener(OnTargetLost);
+		}
+	}
 
 	// 텍스트 크기에 맞춰 RectTransform 조정
 	private void AdjustTextSize()
 	{
 		RectTransform rectTransform = contentText.GetComponent<RectTransform>();
 		rectTransform.sizeDelta = new Vector2(contentText.preferredWidth, contentText.preferredHeight);
+	}
+
+	public void OnTargetFound()
+	{
+		marker?.SetActive(true); // 이미지 인식 시 표식 활성화
+	}
+
+	public void OnTargetLost()
+	{
+		marker?.SetActive(false); // 이미지 인식 해제 시 표식 비활성화
+	}
+
+	private void OnDestroy()
+	{
+		// ARCamera가 null인지 먼저 확인
+		if (ARCamera != null)
+		{
+			var observerEventHandler = ARCamera.GetComponentInChildren<DefaultObserverEventHandler>();
+			if (observerEventHandler != null) // observerEventHandler가 null인지 확인
+			{
+				observerEventHandler.OnTargetFound.RemoveListener(OnTargetFound);
+				observerEventHandler.OnTargetLost.RemoveListener(OnTargetLost);
+			}
+		}
+
+		// marker가 삭제되었는지 확인
+		if (marker != null)
+		{
+			Destroy(marker); // 필요 시 파괴
+		}
 	}
 
 	// 다음 이벤트로 이동
