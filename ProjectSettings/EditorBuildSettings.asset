@@ -11,6 +11,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/AR_Test.unity
     guid: 1cf9f0815d682b646b3e40366aef7050
+  - enabled: 1
+    path: Assets/Scenes/Prolog.unity
+    guid: 839c204a17f11124eab3edd9dc9456cc
+  - enabled: 1
+    path: Assets/Scenes/50thAnniversaryHall.unity
+    guid: 9521468cb3f2ce6409bd900bc8844976
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 60950b58ef18cb246afb9edf1fad25e3, type: 2}
     UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 314102f79d8a6064894ba41aa8bb7829, type: 2}

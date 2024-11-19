@@ -23,6 +23,7 @@ public class Hall50thData
 
 	[Header("Quiz 이벤트 전용")]
 	[Tooltip("Quiz 이벤트일 경우 표시할 팝업 내용")]
+	[TextArea(1, 2)]
 	public string quizPopupContent;              // 팝업 콘텐츠 (Quiz 전용)
 
 	[Tooltip("Quiz 이벤트일 경우 입력할 정답")]

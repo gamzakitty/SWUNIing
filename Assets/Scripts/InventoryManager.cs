@@ -7,6 +7,10 @@ public class InventoryManager : MonoBehaviour
 	// 아이템들을 담은 리스트 (각 아이템은 GameObject로 가정)
 	public List<GameObject> allItems; // 전체 아이템 리스트
 	public GameObject contentPanel;   // 스크롤 뷰의 컨텐츠 패널
+	public Image itemImage;           // 특정 아이템 클릭 시 표시할 이미지 오브젝트
+
+	// 아이템 별로 표시될 이미지
+	public List<Sprite> itemSprites;         // 각 아이템에 대응되는 이미지 리스트
 
 	// 필터 버튼들 (인덱스 버튼들)
 	public GameObject indexButtonAll;        // 전체 보기 버튼
@@ -29,7 +33,14 @@ public class InventoryManager : MonoBehaviour
 		indexButton5.GetComponent<UnityEngine.UI.Button>().onClick.AddListener(() => ShowItemsByIndex(5));
 		indexButton6.GetComponent<UnityEngine.UI.Button>().onClick.AddListener(() => ShowItemsByIndex(6));
 		indexButton7.GetComponent<UnityEngine.UI.Button>().onClick.AddListener(() => ShowItemsByIndex(7));
-		
+
+		// 각 아이템에 클릭 이벤트 추가
+		for (int i = 0; i < allItems.Count; i++)
+		{
+			int index = i; // 로컬 변수로 캡처
+			allItems[i].GetComponent<Button>().onClick.AddListener(() => OnItemClick(index));
+		}
+
 		// 시작할 때 전체 아이템 보여주기
 		ShowItemsByIndex(0);
 	}
@@ -72,5 +83,20 @@ public class InventoryManager : MonoBehaviour
 
 		// UI 업데이트: 레이아웃 그룹을 다시 빌드하여 숨겨진 아이템의 자리를 없앰
 		LayoutRebuilder.ForceRebuildLayoutImmediate(contentPanel.GetComponent<RectTransform>());
+	}
+
+	public void OnItemClick(int index)
+	{
+		// 클릭된 아이템에 연결된 이미지를 `itemImage`에 표시
+		if (index >= 0 && index < itemSprites.Count && itemSprites[index] != null)
+		{
+			itemImage.sprite = itemSprites[index];
+			itemImage.enabled = true; // 이미지를 표시
+		}
+		else
+		{
+			Debug.LogWarning($"No sprite assigned for item index {index}");
+			itemImage.enabled = false; // 이미지 비활성화
+		}
 	}
 }
