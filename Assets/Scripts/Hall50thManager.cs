@@ -15,7 +15,7 @@ public class Hall50thManager : MonoBehaviour
 	public TextMeshProUGUI contentText;              // 대화나 문제 내용을 표시할 UI 텍스트 (TextMeshPro)
 	public TextMeshProUGUI titleText;                // 팝업의 제목 텍스트
 	public Button[] choiceButtons;                   // 선택지 버튼 배열
-	public string nextSceneName;					 // 다음으로 이동할 씬
+	//public string nextSceneName;					 // 다음으로 이동할 씬
 
 	public TextMeshProUGUI quizPopupContentText;     // 퀴즈 팝업의 내용 텍스트
 	public TMP_InputField answerInputField;          // 퀴즈 정답 입력 필드 (TextMeshPro)
@@ -44,6 +44,7 @@ public class Hall50thManager : MonoBehaviour
 	//private string characterNameHeader;
 
 	private int currentEventIndex = 0;               // 현재 대화 또는 이벤트 인덱스
+	public int nextSceneIndex = -1;					 // 다음으로 넘어갈 씬의 인덱스 (Build Setting에서 확인 가능)
 
 	private void Start()
 	{
@@ -392,26 +393,27 @@ public class Hall50thManager : MonoBehaviour
 		Hall50thData currentEventData = events[currentEventIndex];
 
 		// 다음 이벤트 ID 확인
-		if (currentEventData.nextEventIds.Count == 0)
+		if (currentEventData.nextEventIds.Count > 0)
 		{
-			Debug.LogWarning("No next events defined. Ending sequence.");
-			MoveToNextScene();
-			return; // 다음 이벤트가 정의되지 않았으면 종료
-		}
+			int nextEventIndex = currentEventData.nextEventIds[0];
 
-		// 단일 경로 또는 다중 경로 처리
-		// 기본적으로 첫 번째 nextEventId를 사용 (다중 경로는 선택지로 처리)
-		int nextEventIndex = currentEventData.nextEventIds[0];
+			// 다음 이벤트 ID가 -1인 경우, 다음 씬으로 전환
+			if (nextEventIndex == -1)
+			{
+				MoveToNextScene();
+				return;
+			}
 
-		// 다음 이벤트로 이동
-		if (nextEventIndex >= 0 && nextEventIndex < events.Count)
-		{
-			currentEventIndex = nextEventIndex; // 다음 이벤트로 인덱스 설정
-			ShowEvent(currentEventIndex);      // 다음 이벤트 표시
+			// 다음 이벤트로 이동
+			if (nextEventIndex >= 0 && nextEventIndex < events.Count)
+			{
+				currentEventIndex = nextEventIndex; // 다음 이벤트로 인덱스 설정
+				ShowEvent(currentEventIndex);      // 다음 이벤트 표시
+			}
 		}
 		else
 		{
-			Debug.LogError($"Invalid nextEventId: {nextEventIndex}. Check your event configuration.");
+			MoveToNextScene(); // 다음 이벤트가 없는 경우 씬 전환
 		}
 
 		// 다음 이벤트가 다이얼로그일 경우 choiceButton을 다시 활성화
@@ -424,26 +426,43 @@ public class Hall50thManager : MonoBehaviour
 		}
 	}
 
+	// 마지막 이벤트인지 확인
+	private bool IsLastEvent()
+	{
+		if (currentEventIndex >= 0 && currentEventIndex < events.Count)
+		{
+			Hall50thData currentEvent = events[currentEventIndex];
+			return currentEvent.nextEventIds.Count == 0; // 다음 이벤트가 없는지 확인
+		}
+		return false;
+	}
+
 	// 마지막 이벤트가 끝난 후 다음 씬으로 이동
 	private void MoveToNextScene()
 	{
-		if (!string.IsNullOrEmpty(nextSceneName))
+		if (nextSceneIndex >= 0)
 		{
-			Debug.Log($"Moving to next scene: {nextSceneName}");
-			SceneManager.LoadScene(nextSceneName);  // 여기서 nextSceneName을 문자열로 사용합니다.
-		}
-		else
-		{
-			Debug.LogError("Next scene name is not set!");
+			SceneManager.LoadScene(nextSceneIndex);
 		}
 	}
 
-	// 선택지 선택 시 호출
 	private void OnChoiceSelected(int nextEventId)
 	{
-		currentEventIndex = nextEventId;
-		ShowEvent(currentEventIndex);
+		// nextEventId가 -1이면 다음 씬으로 전환
+		if (nextEventId == -1)
+		{
+			MoveToNextScene();
+			return;
+		}
+
+		// 유효한 nextEventId라면 해당 이벤트로 이동
+		if (nextEventId >= 0 && nextEventId < events.Count)
+		{
+			currentEventIndex = nextEventId; // 선택된 이벤트로 갱신
+			ShowEvent(currentEventIndex);
+		}
 	}
+
 
 	private string GetLastSentence(string content)
 	{
