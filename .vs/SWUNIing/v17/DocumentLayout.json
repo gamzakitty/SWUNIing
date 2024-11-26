@@ -11,7 +11,7 @@
       "RelativeMoniker": "D:0:0:{F5A98DDE-EEA0-EF9D-FE89-8B94AC03C1E6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\inventorymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F5A98DDE-EEA0-EF9D-FE89-8B94AC03C1E6}|Assembly-CSharp.csproj|c:\\users\\bsy\\unitywork\\swuniing\\assets\\scripts\\quickpathmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F5A98DDE-EEA0-EF9D-FE89-8B94AC03C1E6}|Assembly-CSharp.csproj|C:\\Users\\bsy\\unitywork\\SWUNIing\\assets\\scripts\\quickpathmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F5A98DDE-EEA0-EF9D-FE89-8B94AC03C1E6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\quickpathmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -70,8 +70,7 @@
               "RelativeToolTip": "Assets\\Scripts\\QuickPathManager.cs",
               "ViewState": "AgIAADYAAAAAAAAAAAAqwF4AAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T15:26:41.118Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-25T15:26:41.118Z"
             },
             {
               "$type": "Document",
@@ -95,8 +94,7 @@
               "RelativeToolTip": "Assets\\Scripts\\InventoryManager.cs",
               "ViewState": "AgIAACsAAAAAAAAAAAAowD0AAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T15:01:22.769Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-12T15:01:22.769Z"
             },
             {
               "$type": "Document",
@@ -118,7 +116,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\Hall50thManager.cs",
               "ToolTip": "C:\\Users\\bsy\\unitywork\\SWUNIing\\Assets\\Scripts\\Hall50thManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\Hall50thManager.cs",
-              "ViewState": "AgIAALQBAAAAAAAAAAAswMEBAAACAAAAAAAAAA==",
+              "ViewState": "AgIAADgBAAAAAAAAAAAgwB0AAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-28T12:11:07.373Z",
               "EditorCaption": ""
@@ -205,7 +203,8 @@
               "RelativeToolTip": "Assets\\Scripts\\ImmeData.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-05T14:38:44.92Z"
+              "WhenOpened": "2024-11-05T14:38:44.92Z",
+              "EditorCaption": ""
             }
           ]
         }

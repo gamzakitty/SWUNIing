@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+  <Tracking>
+    <ImageTarget name="develop_and_deploy" size="700.000000 524.934387" />
+    <ImageTarget name="gomyungwoo_mh_sign" size="700.000000 524.934387" />
+    <ImageTarget name="disabled_parking_place" size="700.000000 524.934387" />
+    <ImageTarget name="guidance_sign" size="700.000000 524.934387" />
+    <ImageTarget name="stairs_close" size="700.000000 524.934387" />
+    <ImageTarget name="stairs" size="700.000000 524.934387" />
+    <ImageTarget name="street_lamp" size="700.000000 524.934387" />
+    <ImageTarget name="into2s_route_1" size="700.000000 524.934387" />
+  </Tracking>
+</QCARConfig>
